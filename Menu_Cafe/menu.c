@@ -73,7 +73,7 @@ int main()
         scanf("%i", &option);
         if(option == 1)
            {
-            total -= gst;
+            total -= gst; // subtracting the previous gst from the total
     printf("\n1. Coffee - Rs.20\n2. Tea - Rs.15\n3. Puff - Rs.25\n4. Sandwich - Rs.40\n5. To finish the order\n");
     printf("Your choice : ");
     scanf("%i", &option);
@@ -127,7 +127,7 @@ int main()
         printf("4. %i * Sandwich \t------------> %i/-\n", sandwich, sandwich * 40);
     }
     printf("Enter your choice of cancelling : ");
-    total -= gst;
+    total -= gst; // subtracting the previous gst from the total
     scanf("%i", &option);
     switch (option)
     {
@@ -139,7 +139,7 @@ int main()
         }
         else 
         {
-           printf("Invalid choice\n");
+           printf("Invalid choice\n"); // To prevent the user from cancelling items not in the cart
            continue;
         }
            
@@ -187,6 +187,8 @@ int main()
         printf("Invalid choice\n");
     }
         }
+
+    // Printing the bill for user's checking
  if(coffee > 0)
     {
         printf("%i * Coffee \t\t------------> %i/-\n", coffee, coffee * 20);
@@ -208,6 +210,10 @@ int main()
     total += gst;
     printf("\nYour Total \t\t------------> %g/-\n", total);
     }
+
+
+    // printing the bill for the checkout 
+
     if(coffee > 0)
     {
         printf("%i * Coffee \t\t------------> %i/-\n", coffee, coffee * 20);
