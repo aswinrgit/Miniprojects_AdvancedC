@@ -1,0 +1,2 @@
+- Generating a dynamic simple menu for a cafe 
+- Implemented addition and deletion to the bill
