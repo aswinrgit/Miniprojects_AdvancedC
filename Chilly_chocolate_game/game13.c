@@ -15,7 +15,7 @@ int main()
         if(turn == 1)
         {
             printf("\nPlayer 1's turn\n");
-            if(choco < 3)
+            if(choco < 3) // Checking if the remanining chocolates are less than 3 and updating available on the same
                 available = choco;
             printf("Enter a option between 1 and %i : ", available);
             scanf("%i", &option);
@@ -27,7 +27,7 @@ int main()
             }  
             choco -= option;
             turn ++;
-            continue;
+            continue; // To skip turn 2 in case of the winning choice
         }
         if(turn == 2)
         {
@@ -46,5 +46,5 @@ int main()
             turn --;  
         }
     }
-    printf("\n\nPlayer %i loses and gets the chilly !\n\n", turn);
+    printf("\n\nPlayer %i loses and gets the chilly !\n\n", turn); // Printing the winner based on the turn the loop was exited
 }
