@@ -1,4 +1,10 @@
+/*
+Chilly chocolate game with 13 chocolates and a choice to select from 1 to 3
+Name : Aswin Raja.R
+Date : 31.10.26
+*/
 #include<stdio.h>
+
 int main()
 {
     int choco = 13, option, turn = 1, available = 3;
@@ -13,7 +19,7 @@ int main()
                 available = choco;
             printf("Enter a option between 1 and %i : ", available);
             scanf("%i", &option);
-            if(option < 1 && option > available)
+            if(option < 1 || option > available)
             {
                 printf("Enter a valid option\n");
                 continue;
@@ -30,7 +36,7 @@ int main()
                 available = choco;
             printf("Enter a option between 1 and %i : ", available);
             scanf("%i", &option);
-            if(option < 1 && option > available)
+            if(option < 1 || option > available)
             {
                 printf("Enter a valid option\n");
                continue;
